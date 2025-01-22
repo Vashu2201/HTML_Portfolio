@@ -16,6 +16,7 @@
           var textarea = document.getElementById("texta1").value;
           if(fname==""){
             alert ("Please Enter Your Name");
+            document.getElementById("f_name").focus();
             return false;
           }
           if(!isNaN(fname)){
@@ -28,6 +29,7 @@
           }
           if(email==""){
             alert("Please Enter Your Email Id");
+            document.getElementById("email_id").focus();
             return false;
           }
           if(email.indexOf('.') - email.indexOf('@') < 2){
@@ -36,6 +38,7 @@
           }
           if(textarea==""){
             alert ("Please Enter Your Message");
+            document.getElementById("texta1").focus();
             return false;
           }
           if(!isNaN(textarea)){
@@ -50,6 +53,7 @@
     </script>
   </head>
   <body>
+    <!-- https://html-portfolio-theta-seven.vercel.app/ -->
     <!-- Nav -->
      <nav class="navbar navbar-expand-md navbar-light bg-dark">
 
